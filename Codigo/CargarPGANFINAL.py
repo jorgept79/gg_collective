@@ -353,8 +353,3 @@ os.makedirs(output_dir, exist_ok=True)
 for i, img in enumerate(images):
     plt.imsave(os.path.join(output_dir, f'image_{i}.png'), img)
 print("Imágenes guardadas.")
-
-
-
-
-
