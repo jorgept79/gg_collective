@@ -44,8 +44,8 @@ PROGRESSIVE_EPOCHS = [30]
 #PRIMERO: SE CARGAN LOS MODELOS PREVIAMENTE GUARDADDOS (GENENADOR Y DISCRIMINADOR). HAY QUE ESPECIFICAR LAS RUTAS
 path_models = 'path_to_models'
 
-path_gen = os.join(path_models, "generator_abstracto512.pt")
-path_critic= os.join(path_models, "critic_abstracto512.pt")
+path_gen = os.path.join(path_models, "generator_abstracto512.pt")
+path_critic= os.path.join(path_models, "critic_abstracto512.pt")
 
 factors = [1,1,1,1/2,1/4,1/8,1/16,1/32,1/64,1/128]
 class WSLinear(nn.Module):
